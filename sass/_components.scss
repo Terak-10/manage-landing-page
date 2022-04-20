@@ -31,10 +31,13 @@
     &_h-1 {
         font-size: clamp(2rem, 5vw, 3.4rem);
         line-height: 1.1;
+        color: var(--Dark-Blue);
     }
 
     &_p {
-        font-size: clamp(0.7rem, 2vw, 1.6rem);
+        font-size: clamp(0.7rem, 1.3vw, 1.1rem);
+        width: 70%;
+        color: var(--Dark-Grayish-Blue);
     }
 
     &_img {
@@ -48,10 +51,13 @@
     font-size: clamp(2.5rem, 3.5vw, 2.8rem);
     line-height: 1.1;
     margin-bottom: 2rem;
+    color: var(--Dark-Blue);
    }
 
    &_p {
-    font-size: clamp(0.7rem, 2vw, 1.6rem);
+    font-size: clamp(0.7rem, 1.3vw, 1.1rem);
+    width: 70%;
+    color: var(--Dark-Grayish-Blue);
    }
 }
 
@@ -79,10 +85,52 @@
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         transform: translateY(0.3rem);
+        color: var(--Dark-Blue);
     }
 
     &_p {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        color: var(--Dark-Grayish-Blue);
+        font-size: clamp(0.7rem, 1.3vw, 1.1rem);
     }
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 2rem;
+    column-gap: 2rem;
+    width: 97%;
+
+    &_img {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    &_c-1,
+    &_c-2,
+    &_c-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 30vh;
+        margin-bottom: 5rem;
+    }
+
+    &_h-4 {
+        margin-bottom: 1rem;
+        color: var(--Dark-Blue);
+    }
+    &_p {
+        text-align: center;
+        color: var(--Dark-Grayish-Blue);
+        font-size: 1rem;
+        line-height: 1.6;
+        width: 80%;
+    }
+
 }
