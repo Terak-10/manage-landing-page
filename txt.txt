@@ -1,0 +1,2 @@
+media 100px zmizne nav UL 
+media 910px prehodiť v tope veci 

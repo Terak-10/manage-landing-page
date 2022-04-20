@@ -1,0 +1,66 @@
+.container {
+}
+
+.header {
+    min-height: 80vh;
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: right -90px top -90px;
+    background-size: contain;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-bar {
+    max-width: 78em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4rem;
+    width: 100%;
+    padding: 0 2.8rem;
+    margin-bottom: 7rem;
+    background-color: red;
+    margin-top: 2rem;
+}
+
+.top {
+    max-width: 78em;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 55vh;
+    padding: 0 2.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: left -330px bottom -270px;
+    background-size: contain;
+    min-height: 74vh;
+}
+
+.main-box {
+    max-width: 78em;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 50vh;
+    padding: 0 2.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;
+    padding-bottom: 7rem;
+   
+}

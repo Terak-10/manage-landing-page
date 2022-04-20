@@ -15,3 +15,142 @@
 
 html {
   box-sizing: inherit; }
+
+body {
+  font-size: 16px;
+  font-family: 'Be Vietnam Pro', sans-serif; }
+
+.nav-bar_ul {
+  display: grid;
+  width: 35%;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 0.5rem;
+  list-style: none; }
+
+.nav-bar_link:link, .nav-bar_link:visited {
+  text-decoration: none;
+  color: var(--Dark-Blue);
+  font-size: 12px;
+  font-weight: 500; }
+
+.top_box-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+.top_box-2 {
+  display: grid; }
+
+.top_h-1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1; }
+
+.top_p {
+  font-size: clamp(0.7rem, 2vw, 1.6rem); }
+
+.top_img {
+  width: 100%;
+  transform: translateX(1rem); }
+
+.section-1_h-1 {
+  font-size: clamp(2.5rem, 3.5vw, 2.8rem);
+  line-height: 1.1;
+  margin-bottom: 2rem; }
+
+.section-1_p {
+  font-size: clamp(0.7rem, 2vw, 1.6rem); }
+
+.section-2 {
+  display: grid;
+  row-gap: 2rem; }
+  .section-2_box-1, .section-2_box-2, .section-2_box-3 {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content;
+    column-gap: 2rem;
+    row-gap: 1rem; }
+  .section-2_btn {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-start; }
+  .section-2_h-3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    transform: translateY(0.3rem); }
+  .section-2_p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
+
+.header {
+  min-height: 80vh;
+  background-image: url(/images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: right -90px top -90px;
+  background-size: contain;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.nav-bar {
+  max-width: 78em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4rem;
+  width: 100%;
+  padding: 0 2.8rem;
+  margin-bottom: 7rem;
+  background-color: red;
+  margin-top: 2rem; }
+
+.top {
+  max-width: 78em;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 55vh;
+  padding: 0 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem; }
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  background-image: url(/images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: left -330px bottom -270px;
+  background-size: contain;
+  min-height: 74vh; }
+
+.main-box {
+  max-width: 78em;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 50vh;
+  padding: 0 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5vw;
+  padding-bottom: 7rem; }
+
+.btn {
+  padding: 0.7rem 1.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--Bright-Red);
+  color: var(--Very-Pale-Red);
+  font-weight: 700; }
+
+.btn-2 {
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--Bright-Red);
+  color: var(--Very-Pale-Red);
+  font-weight: 700; }
