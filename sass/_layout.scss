@@ -19,8 +19,8 @@
     align-items: center;
     min-height: 4rem;
     width: 100%;
-    padding: 0 2.8rem;
-    margin-bottom: var(--margin-7);
+    padding: 0 3.2vw;
+    margin-bottom: clamp(2rem, 9vw, 7rem);
     margin-top: 2rem;
 }
 
@@ -29,11 +29,17 @@
     margin: 0 auto;
     width: 100%;
     min-height: 55vh;
-    padding: 0 2.8rem;
-
+    padding: 0 3.2vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
+
+    @media (max-width: 910px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content minmax(min-content, max-content);
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
 }
 
 .main {
@@ -51,11 +57,17 @@
     margin: 0 auto;
     width: 100%;
     min-height: 50vh;
-    padding: 0 2.8rem;
+    padding: 0 3.2vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5vw;
     padding-bottom: 15rem;
+
+    @media (max-width: 910px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content minmax(min-content, max-content);
+        row-gap: 3rem;
+    }
 }
 
 .card-preview {
@@ -73,6 +85,10 @@
         line-height: 1.1;
         color: var(--Dark-Blue);
         margin-bottom: 4rem;
+
+        @media (max-width: 450px) {
+            font-size: clamp(1.8rem, 2.8vw, 2.2rem);
+        }
     }
 }
 
