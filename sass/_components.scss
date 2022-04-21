@@ -7,6 +7,14 @@
         }
     }
 
+    &_logo {
+        transition: 1s all;
+    }
+
+    &_logo:hover {
+        cursor: pointer;
+        transform: rotate(5deg);
+    }
     &_ul {
         display: grid;
         width: 35%;
@@ -25,6 +33,12 @@
         color: var(--Dark-Blue);
         font-size: 12px;
         font-weight: 500;
+        transition: .2s all;
+    }
+
+    &_link:link:hover,
+    &_link:visited:hover {
+        color: var(--Dark-Grayish-Blue);
     }
 
     &_btn {
@@ -60,6 +74,9 @@
         font-size: clamp(2rem, 5vw, 3.4rem);
         line-height: 1.1;
         color: var(--Dark-Blue);
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-delay: 1s;
 
         @media (max-width: 910px) {
             text-align: center;
@@ -69,10 +86,28 @@
         }
     }
 
+
+    @keyframes pulse {
+        0% {
+            transform : scale(1);
+            opacity   : 1;
+        }
+        50% {
+            transform : scale(0.75);
+            opacity   : 0.25;
+        }
+        100% {
+            transform : scale(1);
+            opacity   : 1;
+        }
+    }
+
     &_p {
         font-size: clamp(0.7rem, 1.3vw, 1.1rem);
         width: 70%;
         color: var(--Dark-Grayish-Blue);
+        animation-name: pulse-2;
+        animation-duration: 3s;
 
         @media (max-width: 910px) {
             width: 80vw;
@@ -85,6 +120,22 @@
             width: 95%;
         }
     }
+
+    @keyframes pulse-2 {
+        0% {
+            transform: translate(-5rem);
+            opacity: 0;
+        }
+
+        80% {
+            
+        }
+
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+        }
 
     &_img {
         width: 100%;
@@ -252,6 +303,12 @@
         color: var(--Bright-Red);
         font-weight: 700;
     }
+
+    &_btn:hover {
+        cursor: pointer;
+        color: hsla(12, 88%, 59%, 0.378);
+        box-shadow: 0 3px 2px -2px rgba(255, 255, 255, 0.873);
+    }
 }
 
 .footer-content {
@@ -287,6 +344,7 @@
 
     &_img {
         width: 12rem;
+        transition: 1s all;
         @media (max-width: 1050px) {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
@@ -300,6 +358,11 @@
             align-self: center;
             justify-self: center;
         }
+    }
+
+    &_img:hover {
+        cursor: pointer;
+        transform: rotate(5deg);
     }
 
     &_icons {
@@ -322,9 +385,16 @@
 
     &_item {
         margin-right: 1.2rem;
+        transition: 1s all;
         @media (max-width: 555px) {
             margin-right: 3.5vw;
         }
+    }
+
+
+    &_item:hover {
+        cursor: pointer;
+        transform: translateY(-0.7em);
     }
 }
 
@@ -347,8 +417,14 @@
     &_link {
         color: var(--Dark-Grayish-Blue);
         text-decoration: none;
+        transition: .2s all;
+    }
+
+    &_link:hover {
+        color: hsl(12, 88%, 59%);
     }
 }
+
 
 .ul-1 {
     grid-column: 3 / 4;

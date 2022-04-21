@@ -5,6 +5,13 @@
     background-color: var(--Bright-Red);
     color: var(--Very-Pale-Red);
     font-weight: 700;
+    transition: .1s all;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 65%;
+    box-shadow: 0 4px 2px -2px hsla(12, 88%, 59%, 0.419);
 }
 
 .btn-2 {
@@ -14,4 +21,10 @@
     background-color: var(--Bright-Red);
     color: var(--Very-Pale-Red);
     font-weight: 700;
+    transition: .1s all;
+}
+
+.btn-2:hover {
+    cursor: pointer;
+    opacity: 65%;
 }
