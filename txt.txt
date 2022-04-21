@@ -1,2 +1,5 @@
-media 100px zmizne nav UL 
+media 1000px zmizne nav UL 
 media 910px prehodiť v tope veci 
+active states
+možno zmenšiť font size písma
+https://manage-pages.netlify.app/
