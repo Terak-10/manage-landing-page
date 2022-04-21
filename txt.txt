@@ -1,4 +1,0 @@
-active states
-https://manage-pages.netlify.app/
-prepísať všetky px na em / rem
-pozrieť či sú niekde medzeri atď
